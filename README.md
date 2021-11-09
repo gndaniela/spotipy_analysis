@@ -5,7 +5,7 @@ Classes and methods to extract and dowload playlists, tracks and features from S
 
 Optional module to change script and create a predictive song's mood model, with moods of your choice.
 
-Default model was created using RandomForestClassifier, and trained with four main moods: "Sad", "Happy", "Calm" and "Energetic".
+Default model was created using RandomForestClassifier, and trained with four main moods: "Sad", "Happy", "Calm" and "Energetic" _(Accuracy: 67%)_.
 
 The tracks for those moods come from Spotify's own moods' playlists.
 
