@@ -22,7 +22,9 @@ Provided features:
 * Tempo
 * Time Signature
 * Key
-* Populatiry
+* Popularity
+* Mode
+* Duration
 
 
 
