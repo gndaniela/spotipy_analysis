@@ -201,7 +201,8 @@ class SearchAndPredictTrack():
             content_model = content.drop(columns=['id','type','uri','track_href','analysis_url','artist','name'],axis=1)  
             
             loaded_rf = self.model
-            prediction = loaded_rf.predict(content_model)[0]
+            prediction = loaded_rf.predict(content_model)
+            prediction = prediction.tolist()
             content['prediction'] = prediction
             
             names =content['name'].to_list()
@@ -212,7 +213,7 @@ class SearchAndPredictTrack():
             for i, name in enumerate(content['name']):
                 print("{0} by {1} is a {2} song".format(names[i],artists[i],predictions[i]))
               
-git 
+ 
 #%% Test class with different examples
 
 Attempt = SearchAndPredictTrack('Perhaps, perhaps', 'Cake')
